@@ -10,8 +10,8 @@
 4. Create a new script with file name as FirstScript
 5. Open the Script and print message "Welcome to Unity" inside the start function
 6. Save the script
-7. Create a new 3D game object in Hierarchy window and name it as 3DObject.
-8. Add the component Firstscript in inspector window of 3Dobject.
+7. Create a new 3D game object in Hierarchy window and name it as 3D Object.
+8. Add the component Firstscript in inspector window of 3D object.
 9. Run the program
 10. Stop the program.
 ## Program 
