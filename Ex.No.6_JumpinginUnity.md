@@ -1,10 +1,10 @@
 # Ex.No: 6  Implementation of Jumping  behaviour- Unity
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE: 02/09/25                                                                           
+### REGISTER NUMBER : 212223240075
 ### AIM: 
 To write a program to simulate the process of jumping in Unity.
 ### Algorithm:
-```
+
 1. Create a new 3D Unity project
 2. Add a Plane
 3. Right-click Hierarchy → 3D Object → Plane → Rename to Ground
@@ -14,22 +14,23 @@ To write a program to simulate the process of jumping in Unity.
 7. Add a Rigidbody to the Player
 8. With the Player selected: Inspector → Add Component → Rigidbody
 9. Set Constraints > Freeze Rotation X, Z (optional for stability)
-10.Create the Jump Script and Apply the Script Player
-11.Run the game
+10. Create the Jump Script and Apply the Script Player
+11. Run the game
+``` 
 Press Play
 Press Spacebar to jump
 Your cube should only jump when touching the ground
 ```
-###
-**Program **
+
+
+### Program 
 ```
 using UnityEngine;
 
-public class PlayerJump : MonoBehaviour
+public class Jump : MonoBehaviour
 {
     private Rigidbody rb;
     public float jumpForce = 5f;
-    private bool isGrounded;
 
     void Start()
     {
@@ -38,28 +39,21 @@ public class PlayerJump : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
+
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
-    }
+
 }
 ```
 ### Output:
 
 
 
-
-
+<img width="1919" height="1078" alt="Screenshot 2025-09-02 143452" src="https://github.com/user-attachments/assets/790b9392-16bb-4057-a61a-70f74743d997" />
 
 
 
