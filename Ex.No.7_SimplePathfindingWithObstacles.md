@@ -44,7 +44,7 @@ To write a program to pathfinding using AI navigation
 #### 7. Attach the Script
 - Drag and Drop AIPathfinder.cs onto the AICharacter
 
-## 8. Assign the Target
+#### 8. Assign the Target
 - Go to: GameObject → 3D Object → Sphere  
 - Rename: Target  
 - In AICharacter Inspector → AIPathfinder → Drag the Target Sphere into the target field
