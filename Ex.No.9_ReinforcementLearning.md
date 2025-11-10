@@ -1,25 +1,23 @@
 # Ex.No: 9  Implementation of Simple Reinforcement Learning 
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE:                                                                      
+### REGISTER NUMBER : 212223240075
 ### AIM: 
 To write a program to implement  Reinforcement learning  in Unity 
 ### Algorithm:
-```
-1.Create a new 3D Unity project
-2.Create a plane → Right-click Hierarchy > 3D Object > Plane
-3.Create an Agent (Cube)
-4.3D Object → Cube → Rename to Agent
+1. Create a new 3D Unity project
+2. Create a plane → Right-click Hierarchy > 3D Object > Plane
+3. Create an Agent (Cube)
+4. 3D Object → Cube → Rename to Agent
 5. Add Rigidbody (disable gravity if needed)
 6. Create a Target (Sphere)
-7.3D Object → Sphere → Rename to Target
-8.Create an empty GameObject → Area (to reset Agent and Target positions)
-9.Add the Behavior Parameters component to your Agent
-10.Behavior Name: MoveToTarget
-11. Vector Observation: 7 (3 for agent pos + 3 for target pos + 1 for velocity), 
-Action Space: Continuous (2)
-12. run the command 
+7. 3D Object → Sphere → Rename to Target
+8. Create an empty GameObject → Area (to reset Agent and Target positions)
+9. Add the Behavior Parameters component to your Agent
+10. Behavior Name: MoveToTarget
+11. Vector Observation: 7 (3 for agent pos + 3 for target pos + 1 for velocity), Action Space: Continuous (2)
+12. Run the command 
 mlagents-learn config.yaml --run-id=move-to-target --train
-```  
+
 ### Program:
 ```
 using Unity.MLAgents;
@@ -106,14 +104,9 @@ behaviors:
         strength: 1.0
 ```
 ### Output:
+<img width="1919" height="1079" alt="Screenshot 2025-11-10 212329" src="https://github.com/user-attachments/assets/bb01e867-79c7-42b6-96a1-2bbec3de7da2" />
 
-
-
-
-
-
-
-
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/ef2c561e-4874-4bc9-8ecb-84a34c0773fd" />
 
 ### Result:
 Thus the AI character was trained using reinforcement learning.
